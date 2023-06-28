@@ -3,9 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bai 7</title>
+    <title>Document</title>
   </head>
   <body>
+    <form action="#">
+      <label for="bookId">Book Id</label>
+      <input type="text" name="bookId" id="bookId" /><br />
+      <label for="bookName">Book Name</label>
+      <input type="text" name="bookName" id="bookName" /><br />
+      <label for="price">Price</label>
+      <input type="number" name="price" id="price" /><br />
+      <label for="author">Author</label>
+      <input type="text" name="author" id="author" /><br />
+      <label for="status">Status</label>
+      <input type="radio" name="status" id="active" value="active" checked />
+      <label for="active">Active</label>
+      <input type="radio" name="status" id="inActive" value="inActive" />
+      <label for="inActive">InActive</label>
+      <br />
+      <input type="submit" value="Submit" id="btnSubmit" />
+    </form>
+    <hr />
+    <div>
+      <label for="searchBookName">Book Name</label>
+      <input type="text" name="searchBookName" id="searchBookName" />
+      <button id="btnSearch">Search</button>
+      <button id="btnSort">Sort by Price ASC</button>
+    </div>
+    <hr />
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Book Id</th>
+          <th>Book Name</th>
+          <th>Price</th>
+          <th>Author</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="content">
+        <tr>
+          <td>Book Id</td>
+          <td>Book Name</td>
+          <td>Price</td>
+          <td>Author</td>
+          <td>Status</td>
+          <td>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
     <script src="./app.js"></script>
   </body>
 </html>
